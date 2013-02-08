@@ -1,0 +1,42 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%_____________ ___    _____  __      __ 
+%\____    /   |   \  /  _  \/  \    /  \  Institute of Applied
+%  /     /    ~    \/  /_\  \   \/\/   /  Psychology
+% /     /\    Y    /    |    \        /   Zürcher Hochschule 
+%/_______ \___|_  /\____|__  /\__/\  /    fuer Angewandte Wissen.
+%        \/     \/         \/      \/                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Project     : Latex Vorlage Nachweis
+% Title       : 
+% File        : doc.tex Rev. 00
+% Date        : 10.10.2012
+% Author      : Till J. Ernst
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{header}
+
+\begin{document}
+\title{Latex Vorlage Nachweis}
+\author{Till J. Ernst}
+
+%PDF Titelblatt
+\includepdf{images/Nachweis_Titelblatt.pdf} 
+
+% Nachweis Inhalt
+% -----------------------------------
+% Einleitung
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\include{content/nachweis}
+% Literaturverzeichnis
+\include{content/literatur}
+
+
+% Blatt mit Unterschrift
+\includepdf{images/Seminararbeit_Unterschrift.pdf}
+
+
+
+\end{document}
